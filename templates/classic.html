@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image to ASCII Art</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='classic.css') }}">
+</head>
+<body>
+    <div id="drop-area">
+        <form class="my-form" onsubmit="return false;">
+            <p>Дрег енд дроп ан имиџ фајл хир ор клик да батен белоу ту аплоуд</p>
+{#            <p>Drag and drop an image file here or click the button below to upload</p>#}
+            <input type="file" id="fileElem" accept="image/*" onchange="handleFiles(this.files)" class="hidden">
+            <label class="ascii-button" for="fileElem">
+                +-------------------------+<br>
+                | Селект а фајл то аплоуд |<br>
+                +-------------------------+
+            </label>
+        </form>
+    </div>
+    <pre id="ascii-art" class="ascii-text hidden"></pre>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

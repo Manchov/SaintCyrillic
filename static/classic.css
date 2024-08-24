@@ -1,0 +1,50 @@
+/* styles.css */
+
+body {
+    font-family: monospace;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+#drop-area {
+    border: 2px dashed #fff;
+    padding: 20px;
+    margin: 20px;
+}
+
+.my-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    margin: 20px 0;
+}
+
+.ascii-button {
+    cursor: pointer;
+    white-space: pre;
+}
+
+.ascii-text {
+    margin-top: 20px;
+    white-space: pre;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Highlight drop area on drag over */
+#drop-area.highlight {
+    border-color: #f0f;
+}
